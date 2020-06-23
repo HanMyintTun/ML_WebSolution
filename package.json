@@ -24,7 +24,7 @@
     "@swimlane/ngx-charts": "^13.0.2",
     "@swimlane/ngx-datatable": "^16.0.3",
     "@types/d3": "^5.7.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "d3": "^5.15.0",
     "echarts": "^4.7.0",
     "font-awesome": "^4.7.0",

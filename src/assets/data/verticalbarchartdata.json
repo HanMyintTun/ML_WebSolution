@@ -1,0 +1,177 @@
+[
+    {
+        "name": "arts_entertainment",
+        "series": [
+            {
+                "name": 0,
+                "value": 800
+            },
+            {
+                "name": 3,
+                "value": 200
+            },
+            {
+                "name": 5,
+                "value": 300
+            },
+            {
+                "name": 18,
+                "value": 400
+            },
+            {
+                "name": 30,
+                "value": 420
+            }
+        ]
+    },
+    {
+        "name": "beauty_spas",
+        "series": [
+            {
+                "name": 0,
+                "value": 0
+            },
+            {
+                "name": 50,
+                "value": 200
+            },
+            {
+                "name": 180,
+                "value": 100
+            },
+            {
+                "name": 400,
+                "value": 3000
+            }
+        ]
+    },
+    {
+        "name": "insurance",
+        "series": [
+            {
+                "name": 0,
+                "value": 10
+            },
+            {
+                "name": 5,
+                "value": 30
+            },
+            {
+                "name": 18,
+                "value": 400
+            },
+            {
+                "name": 20,
+                "value": 80
+            },
+            {
+                "name": 22,
+                "value": 300
+            },
+            {
+                "name": 30,
+                "value": 40
+            }
+            ,{
+                "name": 60,
+                "value": 800
+            },
+            {
+                "name": 90,
+                "value": 30
+            },
+            {
+                "name": 200,
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "shopping",
+        "series": [
+            {
+                "name": 0,
+                "value": 800
+            },
+            {
+                "name": 5,
+                "value": 300
+            },
+            {
+                "name": 18,
+                "value": 400
+            },
+            {
+                "name": 20,
+                "value": 100
+            }
+        ]
+    },
+    {
+        "name": "cafes",
+        "series": [
+            {
+                "name": 0,
+                "value": 800
+            },
+            {
+                "name": 5,
+                "value": 300
+            },
+            {
+                "name": 10,
+                "value": 400
+            },
+            {
+                "name": 15,
+                "value": 40
+            }
+        ]
+    },
+    {
+        "name": "nightlife",
+        "series": [
+            {
+                "name": 0,
+                "value": 800
+            },
+            {
+                "name": 5,
+                "value": 300
+            },
+            {
+                "name": 18,
+                "value": 400
+            },
+            {
+                "name": 20,
+                "value": 100
+            },
+            {
+                "name": 90,
+                "value": 10
+            },
+            {
+                "name": 120,
+                "value": 40
+            }
+        ]
+    },
+    {
+        "name": "property_tax",
+        "series": [
+            {
+                "name": 0,
+                "value": 800
+            },
+            {
+                "name": 5,
+                "value": 300
+            },
+            {
+                "name": 18,
+                "value": 400
+            }
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+<div class="pageheader">
+  <h1>Horizontal Bar Chart</h1>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body dataset-panel">
+    <div class="container">
+      <div class="barchat-item" *ngFor="let item of multi">
+        <ngx-charts-bar-horizontal
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="item.series"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [yAxisLabel]="item.name"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)"
+        >
+        </ngx-charts-bar-horizontal>
+      </div>
+    </div>
+   
+  </div>
+</div>

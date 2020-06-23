@@ -1,0 +1,19 @@
+<header id="header">
+  <app-header></app-header>
+</header>
+<aside class="sidebar sidebar-left">
+  <app-navbar></app-navbar>
+</aside>
+<section class="main-content-wrapper">
+  <!-- Main content view  -->
+  <div ui-view>
+    <router-outlet></router-outlet>
+  </div>
+  <!-- Footer -->
+  <div ng-include="'views/footer.html'"></div>
+</section>
+<ngx-ui-loader
+  fgsType="cube-grid"
+  fgsColor="#27b6af"
+  fgsSize="90"
+></ngx-ui-loader>

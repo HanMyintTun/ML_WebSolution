@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="barchat-item" *ngFor="let item of multi">
+        <!-- <h4>{{item.name}}</h4>
+        <ngx-charts-bar-vertical
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="item.series"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          
+        >
+        </ngx-charts-bar-vertical> -->
+        <h4>{{item.name}}</h4>
+        <ngx-charts-bar-vertical-2d
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="item.series"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          [barPadding]="barPadding"
+          
+        >
+        <ng-template #tooltipTemplate let-model="model">
+          <span>{{model.name}}</span><br>
+          <span>count: {{model.value}}</span>
+          
+        </ng-template>
+        </ngx-charts-bar-vertical-2d>
+      </div>
+      
+</div>

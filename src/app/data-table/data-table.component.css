@@ -1,0 +1,29 @@
+:host ::ng-deep .datatable-footer {
+    color: #948e8e;
+    background: #fff !important;
+}
+:host ::ng-deep .datatable-footer .page-count{
+    color: #948e8e;
+    
+}
+:host ::ng-deep .null-value-cell{
+    background-color: #e21b1b;
+}
+:host ::ng-deep .datatable-header-cell,
+.datatable-body-cell {
+    border: 1px solid #b9b9b9 !important;
+    border-bottom: none !important;
+}
+
+:host ::ng-deep .datatable-body-cell {
+    border: 1px solid #b9b9b9 !important;
+    border-bottom: none !important;
+}
+
+:host ::ng-deep .datatable-pager a{
+    color: #a99898 !important;
+}
+.btn-dataset{
+    float: right;
+    text-transform: uppercase;
+}

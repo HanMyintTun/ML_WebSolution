@@ -1,0 +1,27 @@
+button {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    max-width: 140px;
+    min-width: 50px;
+}
+
+.dataset-panel {
+    min-height: 50vh;
+}
+
+::ng-deep.ngx-datatable.bootstrap .datatable-footer {
+    background: #fff;
+    color: #847979;
+    margin-top: -1px;
+}
+
+::ng-deep.datatable-header-cell-label {
+    text-transform: uppercase;
+}
+
+.olddataset-panel{
+    background: #556b8d;
+    color: #fff;
+}

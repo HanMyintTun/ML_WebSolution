@@ -1,0 +1,63 @@
+<div class="sidebar-profile">
+  <div class="avatar">
+    <img class="img-circle profile-image" src="assets/img/house-logo.png" />
+  </div>
+</div>
+<br />
+<ul class="nav nav-pills nav-stacked" data-nav-toggle-sub>
+  <!--Data Module-->
+  <ng-container>
+    <li
+      routerLink="/DataUpload"
+      routerLinkActive="active"
+      title="Data"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a> <i class="fa fa-database"></i> Datasets </a>
+    </li>
+  </ng-container>
+  <!--Horizontal bar Module-->
+  <ng-container>
+    <li
+      routerLink="/HorizontalBarChart"
+      routerLinkActive="active"
+      title="Data"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a> <i class="fa fa-arrows-h"></i> Horizontal </a>
+    </li>
+  </ng-container>
+  <!--Vertical bar Module-->
+  <ng-container>
+    <li
+      routerLink="/VerticalBarChart"
+      routerLinkActive="active"
+      title="Data"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a> <i class="fa fa-arrows-v"></i> Vertical </a>
+    </li>
+  </ng-container>
+  <!-- Box Plot Module-->
+  <ng-container>
+    <li
+      routerLink="/BoxPlot"
+      routerLinkActive="active"
+      title="Box"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a> <i class="fa fa-arrows-v"></i> Box Plot </a>
+    </li>
+  </ng-container>
+  <!-- Correlation Module-->
+  <ng-container>
+    <li
+      routerLink="/CorrelationChart"
+      routerLinkActive="active"
+      title="Correlation"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a> <i class="fa fa-arrows-h"></i> CorrelationChart </a>
+    </li>
+  </ng-container>
+</ul>

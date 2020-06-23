@@ -1,0 +1,18 @@
+.logo{
+    font-size: 1.05em !important;
+    padding: 0px !important;
+    display: flex !important;
+    align-items: center;
+}
+.logo-img{  
+    padding-top: 3px; 
+    width: 38%;
+}
+.logo-text{
+    color:#fff;
+}
+
+.sidebar-toggle{
+    color:#fff !important;
+}
+

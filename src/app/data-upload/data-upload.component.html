@@ -1,0 +1,124 @@
+<div class="pageheader">
+  <h1>Datasets</h1>
+</div>
+
+<div class="panel panel-default ">
+  <div class="panel-body dataset-panel">
+    <div class="row" style="text-align: right; margin-right: 10px;;">
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle text-uppercase"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          + Add dataset
+        </button>
+        <ul class="dropdown-menu text-uppercase" role="menu">
+          <li>
+            <a data-toggle="modal" data-target="#csvModal">CSV Upload</a>
+          </li>
+          <li><a href="#">Text File</a></li>
+          <li><a href="#">Database</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading olddataset-panel">
+          <h3 class="panel-title">Previous Uploaded Datasets</h3>
+        </div>
+        <div class="panel-body">
+          <ngx-datatable
+            class="bootstrap table"
+            [rows]="rows"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="5"
+            rowHeight="auto"
+            [reorderable]="reorderable"
+            [selectionType]="SelectionType.button"
+          >
+            <ngx-datatable-column
+              class="col-name"
+              *ngFor="let m of columns"
+              name="{{ m }}"
+              prop="{{ m }}"
+            ></ngx-datatable-column>
+            <ngx-datatable-column
+              [sortable]="false"
+              [canAutoResize]="false"
+              [draggable]="false"
+              [resizeable]="false"
+              name="Action"
+            >
+              <ng-template
+                let-row="row"
+                ngx-datatable-cell-template
+                let-value="value"
+                let-isSelected="isSelected"
+                let-onCheckboxChangeFn="onCheckboxChangeFn"
+              >
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-trans btn-sm"
+                  >
+                    Use
+                  </button>
+                </div>
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for CSV upload -->
+  <div
+    class="modal fade"
+    id="csvModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title" id="exampleModalLabel"><b>Add New Dataset</b></h3>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <!-- <input type="file" id="inputFile" accept=".csv" value="" #csvFile/> -->
+            <input type="file" id="inputFile" accept=".csv" (change) ="handleCsvUpload($event)" #csvFile/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cancel
+          </button>
+          <!-- <button
+            type="button"
+            class="btn btn-primary"
+            (click)="CsvUpload(csvFile.value)"
+            data-dismiss="modal"
+          >
+            Confirm
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

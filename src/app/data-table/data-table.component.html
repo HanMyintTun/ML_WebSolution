@@ -1,0 +1,33 @@
+<div class="pageheader">
+  <h1>Uploaded Dataset</h1>
+ 
+</div>
+<div style="padding: 15px;">
+  <button class="btn btn-primary btn-dataset" (click)="SubmitDataset()">Submit dataset</button>
+  <ngx-datatable
+    [rows]="csvData"
+    style="width: 100%; overflow: scroll;"
+    class="bootstrap table"
+    [columnMode]="ColumnMode.force"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    rowHeight="auto"
+    [limit]="40"
+  >
+    <!-- <ngx-datatable-column
+      class="{{ m }}"
+      *ngFor="let m of csvHeader"
+      name="{{ m }}"
+      prop="{{ m }}"
+    > </ngx-datatable-column> -->
+
+    <span *ngFor="let item of csvHeader">
+      <ngx-datatable-column
+        name="{{ item }}"
+        prop="{{ item }}"
+        headerClass=""
+        [cellClass]="getCellClass"
+      ></ngx-datatable-column>
+    </span>
+  </ngx-datatable>
+</div>

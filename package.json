@@ -28,7 +28,7 @@
     "d3": "^5.15.0",
     "echarts": "^4.7.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "ngx-echarts": "^4.2.2",
     "ngx-papaparse": "^4.0.4",

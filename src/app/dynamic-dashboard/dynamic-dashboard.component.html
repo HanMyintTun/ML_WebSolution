@@ -1,0 +1,50 @@
+<div class="pageheader">
+  <h1>Dynamic Dashboard</h1>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body dataset-panel">
+    <div class="container">
+      <div class="row example-boundary" style="height: 300px;">
+        <div class="">
+        <div class="col-md-6" cdkDragBoundary=".example-boundary" cdkDrag>
+          <ngx-charts-pie-chart
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)"
+          >
+        </ngx-charts-pie-chart>
+        </div>
+        <div class="col-md-6"  cdkDragBoundary=".example-boundary" cdkDrag>
+          <ngx-charts-pie-chart
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)"
+          >
+        </ngx-charts-pie-chart>
+        </div>
+        </div>
+
+      </div>
+      <div class="row">
+        test
+      </div>
+    </div>
+  </div>
+</div>

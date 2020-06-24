@@ -22,6 +22,8 @@ import { DataTableComponent } from './data-table/data-table.component';
 import { BoxPlotComponent } from './charts/box-plot/box-plot.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { CorrelationChartComponent } from './charts/correlation-chart/correlation-chart.component';
+import { DynamicDashboardComponent } from './dynamic-dashboard/dynamic-dashboard.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 // import { AppRoutingModule, routingComponents } from './app-routing.module';
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { CorrelationChartComponent } from './charts/correlation-chart/correlatio
     DataTableComponent,
     BoxPlotComponent,
     CorrelationChartComponent,
+    DynamicDashboardComponent,
   ],
   entryComponents: [CsvModalComponent],
   imports: [
@@ -49,7 +52,8 @@ import { CorrelationChartComponent } from './charts/correlation-chart/correlatio
     NgxUiLoaderModule,
     NgxDatatableModule,
     NgxChartsModule,
-    NgxEchartsModule
+    NgxEchartsModule,
+    DragDropModule
   ],
   providers: [JsondataService],
   bootstrap: [AppComponent]

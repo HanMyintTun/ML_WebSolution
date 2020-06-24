@@ -6,15 +6,17 @@ import { VerticalBarChartsComponent } from './charts/vertical-bar-charts/vertica
 import { DataTableComponent } from './data-table/data-table.component';
 import { BoxPlotComponent } from './charts/box-plot/box-plot.component';
 import { CorrelationChartComponent } from './charts/correlation-chart/correlation-chart.component';
+import { DynamicDashboardComponent } from './dynamic-dashboard/dynamic-dashboard.component';
 const routes: Routes = [
 
     {path: '', component: DataUploadComponent},
-    {path: 'DataUpload', component: DataUploadComponent }, 
-    {path: 'HorizontalBarChart', component: HorizontalBarChartComponent }, 
-    {path: 'VerticalBarChart', component: VerticalBarChartsComponent }, 
+    {path: 'DataUpload', component: DataUploadComponent },
+    {path: 'HorizontalBarChart', component: HorizontalBarChartComponent },
+    {path: 'VerticalBarChart', component: VerticalBarChartsComponent },
     {path: 'DataTable', component:DataTableComponent},
     {path: 'BoxPlot',component:BoxPlotComponent},
-    {path: 'CorrelationChart',component:CorrelationChartComponent}
+    {path: 'CorrelationChart',component:CorrelationChartComponent},
+    {path: 'DynamicDashboard',component:DynamicDashboardComponent}
 ];
 
 @NgModule({
